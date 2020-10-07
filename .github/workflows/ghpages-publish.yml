@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        dotnet restore ./LearningBlazorWASM
+        dotnet restore ./Elecritic
     - name: Test
       run: |
         dotnet test --no-restore --verbosity normal ./Electric
