@@ -1,0 +1,23 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+    <h3>Bienvenido a una nueva experiencia de reseñas sobre productos electrónicos.</h3>
+
+
+<br />
+
+<button class="btn btn-primary" @onclick=@( () =>ShowProduct(1))>Producto 1</button>
+<br /><br />
+<button class="btn btn-primary" @onclick=@( () =>ShowProduct(2))>Producto 2</button>
+<br /><br />
+<button class="btn btn-primary" @onclick=@( () =>ShowProduct(3))>Producto 3</button>
+
+@code {
+
+     void ShowProduct(int id)
+    {
+        NavigationManager.NavigateTo("/product/" + id); 
+
+    }
+}
+

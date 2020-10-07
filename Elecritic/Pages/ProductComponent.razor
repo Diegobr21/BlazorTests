@@ -1,0 +1,12 @@
+﻿@page "/product/{productId:int}"
+@page "/product"
+<h3>product.Title</h3>
+
+<p>Soy el producto @ProductId </p>
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private IList<Product> todos = new List<Product>();
+}

@@ -1,0 +1,11 @@
+﻿@page "/favoritos/{userId}"
+
+<h1>Favoritos  de:  @UserId</h1>
+
+<h3>No ha agregado ningún producto como favorito</h3>
+
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+}
