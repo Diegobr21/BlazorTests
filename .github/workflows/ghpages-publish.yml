@@ -21,9 +21,6 @@ jobs:
     - name: Install dependencies
       run: |
         dotnet restore ./Elecritic
-    - name: Test
-      run: |
-        dotnet test --no-restore --verbosity normal ./Electric
     - name: Publish
       run: |
         dotnet publish ./Elecritic/ --configuration Release --output release --nologo
