@@ -1,4 +1,4 @@
-﻿@page "/BlazorTests/product/{productId:int}"
+﻿@page "/BlazorTests/product/{productId}"
 @page "/BlazorTests/product"
 <h3>product.Title</h3>
 
@@ -6,7 +6,12 @@
 
 @code {
     [Parameter]
-    public int ProductId { get; set; }
+    public string ProductId { get; set; }
 
     private IList<Product> todos = new List<Product>();
+
+    protected override void OnInitialized()
+    {
+
+    }
 }
