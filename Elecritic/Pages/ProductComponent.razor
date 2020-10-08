@@ -1,8 +1,50 @@
 ﻿@page "/BlazorTests/product/{productId}"
 @page "/BlazorTests/product"
+@using Elecritic.Data
 <h3>product.Title</h3>
 
 <p>Soy el producto @ProductId </p>
+
+<EditForm Model="@review" OnValidSubmit="@SaveReview">
+    <DataAnnotationsValidator />
+   
+
+    <div class="col-12-row">
+        <label class="col-2 font-weight-bold"> Reseña: </label>
+        <InputTextArea class="form-control col-3" @bind-Value="review.ReviewText" placeholder="Reseña"></InputTextArea>
+        <ValidationMessage For="@(() => review.ReviewText)"/>
+    </div>
+
+    <div class="col-12-row">
+        <label class="col-2 font-weight-bold"> Rating 1-5: </label>
+        <InputNumber class="form-control col-3" @bind-Value="review.RatingProduct" placeholder="Rating"></InputNumber>
+        <ValidationMessage For="@(() => review.RatingProduct)" />
+    </div>
+    <br />
+    <div class="col-12-row">
+        <label class="col-2 font-weight-bold"> Recomendar </label>
+        <InputSelect @bind-Value="review.Recommended">
+            <option value="">Selecciona...</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            <option value="tal vez">Tal vez</option>
+
+        </InputSelect>
+        <ValidationMessage For="@(() => review.Recommended)" />
+    </div>
+    
+    <br />
+
+    <div class="col-12-row">
+        <span class="col-2"></span>
+        <input type="submit" class="form-control col-1 btn btn-primary" value="Publicar" />
+        <span> &nbsp;</span>
+    </div>
+
+
+
+
+</EditForm>
 
 @code {
     [Parameter]
@@ -10,8 +52,17 @@
 
     private IList<Product> todos = new List<Product>();
 
+    public Review review { get; set; }
+
     protected override void OnInitialized()
     {
+        review = new Review();
+    }
 
+    private void SaveReview()
+    {
+        //reviewService.SaveReview(review);
+        //review = new Review();
+        review.clear();
     }
 }
