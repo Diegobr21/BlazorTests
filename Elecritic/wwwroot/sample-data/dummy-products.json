@@ -1,0 +1,32 @@
+[
+  {
+    "imgsource": "/carousel-images/ElecriticLogo.PNG",
+    "title": "Logo Elecritic",
+    "description": "Logo chido"
+  },
+  {
+    "imgsource": "/carousel-images/huawei.jpg",
+    "title": "Huawei",
+    "description": "Modelo Bla Bla"
+  },
+  {
+    "imgsource": "/carousel-images/iphone.png",
+    "title": "Iphone 12",
+    "description": "Muy caro no apoyen esta basura"
+  },
+  {
+    "imgsource": "/carousel-images/lg.jpg",
+    "title": "LG Phone",
+    "description": "Bla bla"
+  },
+  {
+    "imgsource": "/carousel-images/motorola.jpg",
+    "title": "Motorola G7",
+    "description": "cámara frontal de 20px"
+  },
+  {
+    "imgsource": "/carousel-images/samsung.jpg",
+    "title": "Samsung",
+    "description": "Modelo Bla Bla"
+  }
+]
