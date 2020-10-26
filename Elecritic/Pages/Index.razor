@@ -28,10 +28,10 @@ else
                                     {
                                         <div class="col-sm-12 col-lg-4">
                                             <div class="card" style="width: 18rem;">
-                                                <img src=@productCard.Imgsource class="d-block w-100" alt="...">
+                                                <img src=@productCard.imgsource class="d-block w-100" alt="...">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">@productCard.Title</h5>
-                                                    <p class="card-text"> @productCard.Description</p>
+                                                    <h5 class="card-title">@productCard.title</h5>
+                                                    <p class="card-text"> @productCard.description</p>
                                                     <a href="#" class="btn btn-primary">Go somewhere</a>
                                                 </div>
                                             </div>
@@ -138,16 +138,17 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        productCards = await Http.GetFromJsonAsync<ProductCard[]>("sample-data/dummy-products.json");
+        productCards = await Http.GetFromJsonAsync<ProductCard[]>("sample-data/dummyproducts.json");
+        
     }
 
     public class ProductCard
     {
-        public string Imgsource { get; set; }
+        public string imgsource { get; set; }
 
-        public string Title { get; set; }
+        public string title { get; set; }
 
-        public string Description { get; set; }
+        public string description { get; set; }
 
     }
 }
