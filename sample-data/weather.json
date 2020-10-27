@@ -1,27 +1,37 @@
 ﻿[
   {
-    "date": "2018-05-06",
-    "temperatureC": 1,
-    "summary": "Freezing"
+    "imgsource": "carousel-images/ElecriticLogo.PNG",
+    "title": "Logo Elecritic",
+    "description": "Logo chido"
   },
   {
-    "date": "2018-05-07",
-    "temperatureC": 14,
-    "summary": "Bracing"
+    "imgsource": "carousel-images/huawei.jpg",
+    "title": "Huawei",
+    "description": "Modelo Bla Bla"
   },
   {
-    "date": "2018-05-08",
-    "temperatureC": -13,
-    "summary": "Freezing"
+    "imgsource": "carousel-images/iphone.png",
+    "title": "Iphone 12",
+    "description": "Muy caro no apoyen esta basura"
   },
   {
-    "date": "2018-05-09",
-    "temperatureC": -16,
-    "summary": "Balmy"
+    "imgsource": "carousel-images/lg.jpg",
+    "title": "LG Phone",
+    "description": "Bla bla"
   },
   {
-    "date": "2018-05-10",
-    "temperatureC": -2,
-    "summary": "Chilly"
+    "imgsource": "carousel-images/motorola.jpg",
+    "title": "Motorola G7",
+    "description": "cámara frontal de 20px"
+  },
+  {
+    "imgsource": "carousel-images/samsung.jpg",
+    "title": "Samsung",
+    "description": "Modelo Bla Bla"
+  },
+  {
+    "imgsource": "carousel-images/samsung.jpg",
+    "title": "Samsung",
+    "description": "Modelo Bla Bla"
   }
 ]
