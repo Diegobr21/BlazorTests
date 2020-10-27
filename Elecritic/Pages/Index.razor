@@ -7,6 +7,7 @@
 
 <br />
 
+
 @if (productCards == null)
 {
     <p><em>No hay productos que mostrar... </em></p>
@@ -26,9 +27,11 @@ else
 
                                     @foreach (var productCard in productCards)
                                     {
+                                        <p> @productCard.title</p>
+
                                         <div class="col-sm-12 col-lg-4">
                                             <div class="card" style="width: 18rem;">
-                                                <img src=@productCard.imgsource class="d-block w-100" alt="...">
+                                                <img src=@productCard.imgsource class="d-block w-100" alt="imagenProducto">
                                                 <div class="card-body">
                                                     <h5 class="card-title">@productCard.title</h5>
                                                     <p class="card-text"> @productCard.description</p>
@@ -38,74 +41,74 @@ else
                                         </div>
                                     }
                                     <!--
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/ElecriticLogo.PNG" class="d-block w-100" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/ElecriticLogo.PNG" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/huawei.jpg" class="d-block w-100" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/huawei.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/iphone.png" class="d-block w-100" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/iphone.png" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/lg.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/lg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/motorola.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/motorola.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="/carousel-images/samsung.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/carousel-images/samsung.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
 
-                                        </div>
+        </div>
 
 
-                                                                </div>-->
+                                </div>-->
                                 </div>
                             </div>
                         </div>
@@ -128,18 +131,19 @@ else
 @code {
 
 
-    void ShowProduct(int id)
-    {
-        NavigationManager.NavigateTo("BlazorTests/product/" + id);
+        void ShowProduct(int id)
+        {
+            NavigationManager.NavigateTo("BlazorTests/product/" + id);
 
-    }
+        }
 
     private ProductCard[] productCards;
+    
 
     protected override async Task OnInitializedAsync()
     {
-        productCards = await Http.GetFromJsonAsync<ProductCard[]>("sample-data/dummyproducts.json");
-        
+        productCards = await Http.GetFromJsonAsync<ProductCard[]>("sample-data/weather.json");
+
     }
 
     public class ProductCard
@@ -151,5 +155,7 @@ else
         public string description { get; set; }
 
     }
+
+   
 }
 
