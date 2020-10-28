@@ -142,7 +142,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        productCards = await Http.GetFromJsonAsync<ProductCard[]>("sample-data/weather.json");
+        productCards = await Http.GetFromJsonAsync<ProductCard[]>("Data/weather.json");
 
     }
 

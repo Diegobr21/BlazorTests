@@ -1,0 +1,52 @@
+﻿@page  "/login"
+<h3>User Login</h3>
+
+<p> Please enter valid credentials</p>
+
+<EditForm Model="@userC" OnValidSubmit="@authCheck">
+    <DataAnnotationsValidator />
+
+
+    <div class="col-12-row">
+        <label class="col-2 font-weight-bold"> E-mail: </label>
+        <InputText class="form-control col-3" @bind-Value="@userMail" placeholder="Mail"></InputText>
+        <ValidationMessage For="@(() => @userMail)" />
+    </div>
+
+    <div class="col-12-row">
+        <label class="col-2 font-weight-bold"> Password: </label>
+        <InputText class="form-control col-3" @bind-Value="@userPssd" placeholder="Password"></InputText>
+        <ValidationMessage For="@(() => @userPssd)" />
+    </div>
+
+    <br />
+
+    <div class="col-12-row">
+        <span class="col-2"></span>
+        <input type="submit" class="form-control col-1 btn btn-primary" value="Log in" />
+        <span> &nbsp;</span>
+    </div>
+
+
+</EditForm>
+
+<p> @message</p>
+
+@code {
+
+    public string userMail;
+    public string userPssd;
+    public string message = "";
+
+    public Elecritic.Data.UserCheck userC { get; set; }
+
+    protected override void OnInitialized()
+    {
+        userC = new Data.UserCheck();
+    }
+
+    private void authCheck()
+    {
+        message = "Puede ingresar";
+    }
+}
